@@ -27,109 +27,44 @@
             background: linear-gradient(to bottom, #1a1a1a, var(--bg));
         }
 
-        h1 { color: var(--gold); font-size: 3rem; margin: 0; }
-        .tagline { font-style: italic; color: #888; margin-top: 5px; }
+        h1 { color: var(--gold); font-size: 3.5rem; margin: 0; text-transform: uppercase; letter-spacing: 4px; }
+        .tagline { font-style: italic; color: #888; margin-top: 5px; font-size: 1.2rem; }
 
-        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
 
         .category-title {
             border-bottom: 2px solid var(--crimson);
             color: var(--gold);
             padding-bottom: 10px;
-            margin-top: 50px;
+            margin-top: 60px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            font-size: 1.8rem;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
         }
 
         .card {
             background: #161b22;
             border: 1px solid #30363d;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
 
-        .card:hover { transform: translateY(-5px); border-color: var(--gold); }
-
-        .card-img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            background-color: #222;
-            display: block;
+        .card:hover { 
+            transform: translateY(-8px); 
+            border-color: var(--gold);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
         }
 
-        .card-content { padding: 15px; }
-        .card-title { color: var(--gold); font-weight: bold; margin-bottom: 5px; font-size: 1.2rem; }
-        .card-desc { font-size: 0.9rem; color: #aaa; }
-
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header>
-        <h1>DragonKingRyan</h1>
-        <p class="tagline">Chronicles from the Riftborne Realm</p>
-    </header>
-
-    <div class="container">
-
-        <h2 class="category-title">Riftborne</h2>
-        <div class="grid">
-            <a href="LINK_TO_STORY" class="card">
-                <img src="images/nyxarith.png" class="card-img" alt="Nyxarith">
-                <div class="card-content">
-                    <div class="card-title">Nyxarith</div>
-                    <div class="card-desc">Voices from beyond the threshold.</div>
-                </div>
-            </a>
-        </div>
-
-        <h2 class="category-title">Battles</h2>
-        <div class="grid">
-            <a href="LINK_TO_STORY" class="card">
-                <img src="images/battle1.jpg" class="card-img" alt="Siege">
-                <div class="card-content">
-                    <div class="card-title">The Siege of Aranth</div>
-                    <div class="card-desc">The clash of steel and the price of victory.</div>
-                </div>
-            </a>
-        </div>
-
-        <h2 class="category-title">Dragons</h2>
-        <div class="grid">
-            <a href="LINK_TO_STORY" class="card">
-                <img src="images/noxithrax.png" class="card-img" alt="Noxithrax">
-                <div class="card-content">
-                    <div class="card-title">Noxithrax</div>
-                    <div class="card-desc">Shadows of the ancient night.</div>
-                </div>
-            </a>
-            <a href="LINK_TO_STORY" class="card">
-                <img src="images/emberyx.png" class="card-img" alt="Emberyx">
-                <div class="card-content">
-                    <div class="card-title">Emberyx</div>
-                    <div class="card-desc">The flame that never dies.</div>
-                </div>
-            </a>
-        </div>
-
-    </div>
-
-    <footer style="text-align: center; padding: 60px; color: #444; font-size: 0.8rem;">
-        © 2025 DragonKingRyan
-    </footer>
-
-</body>
-</html>
+        .card
