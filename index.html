@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dragon's Lair | Portfolio</title>
     <style>
-        /* THE DARK FANTASY THEME */
         :root {
-            --bg: #0b0c10;      /* Deep Obsidian */
-            --gold: #c5a059;    /* Burnished Gold */
-            --crimson: #7b1113; /* Dragon Blood Red */
-            --text: #e8d5a5;    /* Aged Parchment */
+            --bg: #0b0c10;
+            --gold: #c5a059;
+            --crimson: #7b1113;
+            --text: #e8d5a5;
         }
 
         body {
             background-color: var(--bg);
             color: var(--text);
-            font-family: 'EB Garamond', serif; /* Use a classic serif font */
+            font-family: 'EB Garamond', serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -28,12 +27,11 @@
             background: linear-gradient(to bottom, #1a1a1a, var(--bg));
         }
 
-        h1 { color: var(--gold); font-size: 3rem; margin-bottom: 10px; }
-        .tagline { font-style: italic; color: #888; }
+        h1 { color: var(--gold); font-size: 3rem; margin: 0; }
+        .tagline { font-style: italic; color: #888; margin-top: 5px; }
 
         .container { max-width: 900px; margin: auto; padding: 20px; }
 
-        /* CATEGORY SECTIONS */
         .category-title {
             border-bottom: 2px solid var(--crimson);
             color: var(--gold);
@@ -43,7 +41,6 @@
             letter-spacing: 2px;
         }
 
-        /* THE GRID (Bento Style) */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -59,23 +56,25 @@
             transition: transform 0.3s ease;
             text-decoration: none;
             color: inherit;
+            display: block;
         }
 
         .card:hover { transform: translateY(-5px); border-color: var(--gold); }
 
         .card-img {
             width: 100%;
-            height: 150px;
-            background-color: #222;
+            height: 180px;
             object-fit: cover;
+            background-color: #222;
+            display: block;
         }
 
         .card-content { padding: 15px; }
-        .card-title { color: var(--gold); font-weight: bold; margin-bottom: 5px; }
+        .card-title { color: var(--gold); font-weight: bold; margin-bottom: 5px; font-size: 1.2rem; }
         .card-desc { font-size: 0.9rem; color: #aaa; }
 
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -88,19 +87,20 @@
 
         <h2 class="category-title">Riftborne</h2>
         <div class="grid">
-            <a href="YOUR_LINK_HERE" class="card">
-                <img src="YOUR_IMAGE_URL" class="card-img" alt="Nyxarith">
+            <a href="LINK_TO_STORY" class="card">
+                <img src="images/nyxarith.png" class="card-img" alt="Nyxarith">
                 <div class="card-content">
                     <div class="card-title">Nyxarith</div>
                     <div class="card-desc">Voices from beyond the threshold.</div>
                 </div>
             </a>
-            </div>
+        </div>
 
         <h2 class="category-title">Battles</h2>
         <div class="grid">
-            <a href="#" class="card">
-                <div class="card-img"></div> <div class="card-content">
+            <a href="LINK_TO_STORY" class="card">
+                <img src="images/battle1.jpg" class="card-img" alt="Siege">
+                <div class="card-content">
                     <div class="card-title">The Siege of Aranth</div>
                     <div class="card-desc">The clash of steel and the price of victory.</div>
                 </div>
@@ -109,18 +109,25 @@
 
         <h2 class="category-title">Dragons</h2>
         <div class="grid">
-            <a href="#" class="card">
-                <img src="YOUR_IMAGE_URL" class="card-img" alt="Emberyx">
+            <a href="LINK_TO_STORY" class="card">
+                <img src="images/noxithrax.png" class="card-img" alt="Noxithrax">
+                <div class="card-content">
+                    <div class="card-title">Noxithrax</div>
+                    <div class="card-desc">Shadows of the ancient night.</div>
+                </div>
+            </a>
+            <a href="LINK_TO_STORY" class="card">
+                <img src="images/emberyx.png" class="card-img" alt="Emberyx">
                 <div class="card-content">
                     <div class="card-title">Emberyx</div>
-                    <div class="card-desc">Ancient scales and eternal fire.</div>
+                    <div class="card-desc">The flame that never dies.</div>
                 </div>
             </a>
         </div>
 
     </div>
 
-    <footer style="text-align: center; padding: 40px; color: #444; font-size: 0.8rem;">
+    <footer style="text-align: center; padding: 60px; color: #444; font-size: 0.8rem;">
         © 2025 DragonKingRyan
     </footer>
 
